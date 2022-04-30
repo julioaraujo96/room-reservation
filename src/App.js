@@ -5,7 +5,8 @@ import styles from './App.module.css'
 
 function App() {
  const [data,setData] = useState([]);
- const [orientation,setOrientation] = useState('');
+ const [filteredData,setFilteredData] = useState([]);
+ const [orientation,setOrientation] = useState('All');
 
   useEffect(()=>{
     fetchData();
@@ -15,23 +16,28 @@ function App() {
     const response = await axios.get('rooms.json');
     const result = await response.data.rooms;
     setData(result);
+    setFilteredData(result);
   }
 
   let output;
 
   if (data) {
-     output = data.map(room => <Room key={room.id} rooms={room}/>);
+     output = filteredData.map(room => <Room key={room.id} rooms={room}/>);
   }
 
   const handleChange = (e) =>{
 
       const selectedOrientation = e.target.value;
-      if (selectedOrientation === '' ) return;
+      if (selectedOrientation === 'All' ) {
+        setFilteredData(data)
+      } else{
+        setOrientation(selectedOrientation);
 
-      setOrientation(selectedOrientation);
+        const filteredRooms = data.filter(room => room.location.orientation === selectedOrientation);
+        setFilteredData(filteredRooms);
+      };
 
-      const filteredRooms = data.filter(room => room.location.orientation === selectedOrientation);
-      setData(filteredRooms);
+     
   }
 
   return (
@@ -43,7 +49,7 @@ function App() {
       onChange={(e)=> handleChange(e)}
       id="orientation"
       >
-          <option value=""></option>
+          <option value="All">All</option>
           <option value="sea side">Sea side</option>
           <option value="avenue side">Avenue side</option>
       </select>
