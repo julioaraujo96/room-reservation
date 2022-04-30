@@ -8,13 +8,14 @@ function App() {
  const [orientation,setOrientation] = useState('');
 
   useEffect(()=>{
-    async function fetchData(){
-      const response = await axios.get('rooms.json');
-      const result = await response.data.rooms;
-      setData(result);
-    }
     fetchData();
   },[]);
+
+  const fetchData = async () => {
+    const response = await axios.get('rooms.json');
+    const result = await response.data.rooms;
+    setData(result);
+  }
 
   let output;
 
