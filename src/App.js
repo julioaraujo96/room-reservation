@@ -43,19 +43,21 @@ function App() {
 
   return (
     <div className="App">
-      <label for="orientation">Orientation:</label>
-
-      <select name="orientation" 
-      value={orientation}
-      onChange={(e)=> handleChange(e)}
-      id="orientation"
-      >
-          <option value="All">All</option>
-          <option value="sea side">Sea side</option>
-          <option value="avenue side">Avenue side</option>
-      </select>
-      {orientation}
+    
       <div className={styles.container}>
+      <div className={styles.filterContainer}>
+          <label>Orientation:</label>
+
+          <select name="orientation" 
+          value={orientation}
+          onChange={(e)=> handleChange(e)}
+          id="orientation"
+          >
+              <option value="All">All</option>
+              <option value="sea side">Sea side</option>
+              <option value="avenue side">Avenue side</option>
+          </select>
+        </div>
         {output}
       </div>
     </div>

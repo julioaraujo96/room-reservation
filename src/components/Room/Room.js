@@ -20,20 +20,22 @@ const Room = (props) => {
     }
 
     return (
-        <div className={styles.Room}>
+        <article className={styles.Room}>
            <div className="card-header">
                 {props.rooms.id}
            </div>
             <div className="card-body">
-                <p>Location: {getRoomLocation(props.rooms)}</p>
-                <p>Bathroom: {getBathroomAccomodations(props.rooms)}</p>
-                <p>Bed: {getBedSizeAndSheets(props.rooms)}</p>
-                <p>Desk: {getDeskInfo(props.rooms)}</p>
+                <ul>
+                    <li><span className={styles.listItem}>Location:</span> {getRoomLocation(props.rooms)}</li>
+                    <li><span className={styles.listItem}>Bathroom:</span> {getBathroomAccomodations(props.rooms)}</li>
+                    <li><span className={styles.listItem}>Bed:</span> {getBedSizeAndSheets(props.rooms)}</li>
+                    <li><span className={styles.listItem}>Desk:</span> {getDeskInfo(props.rooms)}</li>
+                </ul>
             </div>
             <div className="card-footer">
                 <button type='submit'>Reserve</button>
             </div>
-        </div>
+        </article>
     );
 };
 
