@@ -1,0 +1,9 @@
+.Room
+{
+    text-align: center;
+    height:fit-content;
+    max-width:500px;
+    border-radius:0.5px;
+    border: 1px solid;
+    background-color: lightblue;
+}

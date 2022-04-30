@@ -1,0 +1,159 @@
+{
+  "time": "00.1ms",
+  "rooms": [
+    {
+      "id": "ASDFA00401",
+      "location": {
+        "orientation": "sea side",
+        "floor": 4
+      },
+      "bathroom": {
+        "full": "true",
+        "jacuzzi": 0,
+        "bidet": 0
+      },
+      "bed": {
+        "size": "queen",
+        "sheets": "cotton"
+      },
+      "desk": {
+        "quantity": 0
+      }
+    },
+    {
+      "id": "ASDFA00402",
+      "location": {
+        "orientation": "Avenue side",
+        "floor": 4
+      },
+      "bathroom": {
+        "full": "true",
+        "jacuzzi": 0,
+        "bidet": 0
+      },
+      "bed": {
+        "size": "queen",
+        "sheets": "cotton"
+      },
+      "desk": {
+        "quantity": 1
+      }
+    },
+
+    {
+      "id": "ASDFA00301",
+      "location": {
+        "orientation": "sea side",
+        "floor": 3
+      },
+      "bathroom": {
+        "full": "true",
+        "jacuzzi": 1,
+        "bidet": 0
+      },
+      "bed": {
+        "size": "king",
+        "sheets": "cotton"
+      },
+      "desk": {
+        "quantity": 1
+      }
+    },
+    {
+      "id": "ASDFA00302",
+      "location": {
+        "orientation": "avenue side",
+        "floor": 3
+      },
+      "bathroom": {
+        "full": "true",
+        "jacuzzi": 0,
+        "bidet": 1
+      },
+      "bed": {
+        "size": "king",
+        "sheets": "cotton"
+      },
+      "desk": {
+        "quantity": 1
+      }
+    },
+    {
+      "id": "ASDFA00201",
+      "location": {
+        "orientation": "sea side",
+        "floor": 2
+      },
+      "bathroom": {
+        "full": "true",
+        "jacuzzi": 0,
+        "bidet": 0
+      },
+      "bed": {
+        "size": "king",
+        "sheets": "cotton"
+      },
+      "desk": {
+        "quantity": 0
+      }
+    },
+    {
+      "id": "ASDFA00202",
+      "location": {
+        "orientation": "avenue side",
+        "floor": 2
+      },
+      "bathroom": {
+        "full": "true",
+        "jacuzzi": 1,
+        "bidet": 1
+      },
+      "bed": {
+        "size": "king",
+        "sheets": "cotton"
+      },
+      "desk": {
+        "quantity": 0
+      }
+    },
+    {
+      "id": "ASDFA00101",
+      "location": {
+        "orientation": "sea side",
+        "floor": 1
+      },
+      "bathroom": {
+        "full": "true",
+        "jacuzzi": 0,
+        "bidet": 0
+      },
+      "bed": {
+        "size": "king",
+        "sheets": "cotton"
+      },
+      "desk": {
+        "quantity": 1
+      }
+    },
+    {
+      "id": "ASDFA00102",
+      "location": {
+        "orientation": "avenue side",
+        "floor": 1
+      },
+      "bathroom": {
+        "full": "true",
+        "jacuzzi": 0,
+        "bidet": 0
+      },
+      "bed": {
+        "size": "queen",
+        "sheets": "cotton"
+      },
+      "desk": {
+        "quantity": 1
+      }
+    }
+  ],
+  "total": 8
+}
