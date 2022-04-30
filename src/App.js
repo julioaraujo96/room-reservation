@@ -30,6 +30,7 @@ function App() {
       const selectedOrientation = e.target.value;
       if (selectedOrientation === 'All' ) {
         setFilteredData(data)
+        setOrientation(selectedOrientation);
       } else{
         setOrientation(selectedOrientation);
 
